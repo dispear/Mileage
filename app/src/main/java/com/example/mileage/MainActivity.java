@@ -8,7 +8,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.personal_challenge);
+        setContentView(R.layout.event_challenge);
 
     }
 }
