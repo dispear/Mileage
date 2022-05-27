@@ -7,8 +7,8 @@
 
     <ImageButton
         android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
@@ -22,12 +22,12 @@
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="이벤트 챌린지"
-        android:textSize="40dp" />
+        android:textSize="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="60dp">
 
         <LinearLayout
             android:layout_width="match_parent"
