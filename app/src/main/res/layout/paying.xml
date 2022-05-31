@@ -5,11 +5,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:orientation="horizontal"/>
-
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="40dp"
@@ -30,6 +25,7 @@
         android:textSize="30dp" />
 
     <ScrollView
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
