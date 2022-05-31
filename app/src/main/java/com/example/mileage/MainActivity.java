@@ -8,8 +8,6 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
@@ -18,7 +16,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity{
-    comunity_1 comunity;
+    com.example.mileage.comunity comunity;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
@@ -26,7 +24,7 @@ public class MainActivity extends AppCompatActivity{
         Log.d("getKeyHash", "" + getKeyHash(MainActivity.this));
         // 이렇게 로그에 키해시 값을 뽑아 주면 로그창에 키해시가 뜹니다!!
 
-        comunity = new comunity_1();
+        comunity = new comunity();
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,comunity).commit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);

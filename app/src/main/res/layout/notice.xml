@@ -45,7 +45,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
-                    android:text="진행중인 이벤트"
+                    android:text="진행중인 캠페인"
                     android:textSize="40dp" />
 
                 <ImageButton
@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
                     android:gravity="center"
-                    android:text="예정된 이벤트"
+                    android:text="예정된 캠페인"
                     android:textSize="40dp" />
 
                 <ImageButton

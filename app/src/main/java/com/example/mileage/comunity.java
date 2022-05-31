@@ -10,14 +10,14 @@ import android.view.ViewGroup;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link comunity_1#newInstance} factory method to
+ * Use the {@link comunity#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class comunity_1 extends Fragment {
+public class comunity extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_comunity_1, container, false);
+        return inflater.inflate(R.layout.fragment_comunity, container, false);
     }
 }
