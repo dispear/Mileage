@@ -67,7 +67,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="게시글 제목"
+                    android:text="질문 있습니다."
                     android:background="@drawable/topline"
                     android:textSize="40dp" />
 
@@ -76,7 +76,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="게시글 제목"
+                    android:text="종이 배출에 대해..."
                     android:background="@drawable/topline"
                     android:textSize="40dp" />
 
@@ -85,7 +85,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="게시글 제목"
+                    android:text="이거 아시는 분 계신가요?"
                     android:background="@drawable/topline"
                     android:textSize="40dp" />
 
