@@ -15,12 +15,21 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="삼다수 500ml 페트병"
+                android:textSize="20dp" />
+
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
+                android:layout_height="277dp"
                 android:layout_margin="10dp"
-                android:layout_height="match_parent"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@drawable/pet" />
 
             <TextView
                 android:id="@+id/textView5"
@@ -58,7 +67,11 @@
                 android:layout_height="531dp"
                 android:layout_margin="10dp"
                 android:padding="30dp"
-                android:text="분리수거방법" />
+                android:text="투명 페트(PET)병 분리배출
+                \n1. 내용물을 비우고 세척한다.
+                \n2. 겉비닐 라벨을 제거한다.
+                \n3. 페트병을 찌그러트리고 뚜껑을 닫는다.
+                \n4. 투명 페트병과 유색 페트병을 분리하여 배출한다." />
         </LinearLayout>
     </ScrollView>
 
