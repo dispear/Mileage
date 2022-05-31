@@ -37,26 +37,27 @@
 
             <Spinner
                 android:id="@+id/spinner"
-                android:layout_width="154dp"
-                android:layout_height="145dp"
-                android:layout_margin="10dp"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1" />
 
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+            <Button
+                android:id="@+id/button"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                tools:src="@tools:sample/avatars" />
+                android:text="마일리지 상점" />
 
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
-                tools:src="@tools:sample/avatars" />
+                android:text="이용 내역" />
+
         </LinearLayout>
     </LinearLayout>
 </FrameLayout>

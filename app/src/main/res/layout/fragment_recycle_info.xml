@@ -30,66 +30,47 @@
             android:rowCount="3"
             android:columnCount="2">
 
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                tools:src="@tools:sample/avatars" />
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="종이류" />
 
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                tools:src="@tools:sample/avatars" />
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="금속류" />
 
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_column="0"
-                tools:src="@tools:sample/avatars"
-                android:layout_row="1"/>
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="유리병류" />
 
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                tools:src="@tools:sample/avatars" />
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="플라스틱류" />
 
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_gravity="center"
-                android:layout_row="2"
-                android:layout_column="0"
-                tools:src="@tools:sample/avatars" />
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="비닐류" />
 
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_row="2"
-                android:layout_column="1"
-                android:layout_gravity="center"
-                tools:src="@tools:sample/avatars" />
-
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="스티로폼" />
         </GridLayout>
     </LinearLayout>
 </FrameLayout>
