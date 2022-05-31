@@ -19,6 +19,6 @@ public class MainActivity extends AppCompatActivity{
     com.example.mileage.comunity comunity;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.activity_main);
     }
 }
