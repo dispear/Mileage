@@ -3,12 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/drawable/outline.xml" value="0.208" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/drawable/topline.xml" value="0.208" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/aaaaa.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/fragment_comunity.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/fragment_mileage_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/fragment_recycle_info.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/login.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/notice.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/paper.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/paying.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/personal_challenge.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/photo.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/purchase.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/Mileage/app/src/main/res/layout/store.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/chan1/AndroidStudioProjects/Mileage/app/src/main/res/layout/aaaaa.xml" value="0.26458333333333334" />
         <entry key="..\:/Users/chan1/AndroidStudioProjects/Mileage/app/src/main/res/layout/checkwritelist.xml" value="0.25" />
         <entry key="..\:/Users/chan1/AndroidStudioProjects/Mileage/app/src/main/res/layout/comunity.xml" value="0.2640625" />
         <entry key="..\:/Users/chan1/AndroidStudioProjects/Mileage/app/src/main/res/layout/dfsfsf.xml" value="0.2635416666666667" />
+        <entry key="..\:/Users/chan1/AndroidStudioProjects/Mileage/app/src/main/res/layout/fragment_comunity.xml" value="0.25" />
         <entry key="..\:/Users/chan1/AndroidStudioProjects/Mileage/app/src/main/res/layout/writing.xml" value="0.17358490566037735" />
         <entry key="..\:/Users/jihoon/AndroidStudioProjects/Mileage/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.168" />
         <entry key="..\:/Users/jihoon/AndroidStudioProjects/Mileage/app/src/main/res/drawable/bottomline.xml" value="0.168" />

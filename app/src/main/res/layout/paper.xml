@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:background="@drawable/bottomline"
         android:gravity="center"
         android:text="종이류"
         android:textSize="40dp" />
@@ -44,7 +43,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_margin="10dp"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:scaleType="fitCenter"
+                android:background="#FFFFFF"
+                tools:srcCompat="@drawable/openbox" />
 
             <ListView
                 android:layout_width="match_parent"

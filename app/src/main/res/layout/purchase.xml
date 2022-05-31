@@ -39,21 +39,34 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <androidx.viewpager2.widget.ViewPager2
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
+                android:layout_height="259dp"
+                tools:srcCompat="@drawable/soap" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:text="살림연구소 친환경 천연 설거지비누 3종"
+                android:layout_margin="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:text="4500마일리지" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="282dp"
-                android:text="TextView" />
+                android:text="살림연구소 친환경 천연 설거지비누 3종 설명" />
 
         </LinearLayout>
     </ScrollView>
