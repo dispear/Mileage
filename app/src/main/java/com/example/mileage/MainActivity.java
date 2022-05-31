@@ -15,7 +15,7 @@ import java.security.NoSuchAlgorithmException;
 public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.login);
 
         Log.d("getKeyHash", "" + getKeyHash(MainActivity.this));
         // 이렇게 로그에 키해시 값을 뽑아 주면 로그창에 키해시가 뜹니다!!
