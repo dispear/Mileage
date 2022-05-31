@@ -5,9 +5,9 @@
     android:layout_height="match_parent">
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:id="@+id/imageButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:background="#FFFFFF"
@@ -15,13 +15,13 @@
         app:srcCompat="@drawable/iconback" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="공지 사항"
-        android:textSize="30dp" />
+        android:text="공지사항"
+        android:textSize="40dp" />
 
     <ScrollView
         android:layout_width="match_parent"
