@@ -10,7 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        // gradle 추가
+        maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
     }
 }
+
 rootProject.name = "Mileage"
 include ':app'
