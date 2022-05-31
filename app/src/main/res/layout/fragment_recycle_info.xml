@@ -13,9 +13,12 @@
 
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:src="@tools:sample/avatars" />
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/camera" />
 
         <SearchView
             android:layout_width="match_parent"
