@@ -5,9 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/title_paying"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -17,7 +16,7 @@
         android:textSize="40dp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btn_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
@@ -25,8 +24,6 @@
         android:background="#FFFFFF"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/iconback" />
-
-
 
     <ScrollView
         android:layout_marginTop="60dp"
@@ -39,7 +36,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/tv_have"
                 android:layout_width="match_parent"
                 android:layout_height="295dp"
                 android:layout_margin="10dp"
@@ -48,7 +45,7 @@
                 android:textSize="25dp" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/tv_product"
                 android:layout_width="match_parent"
                 android:layout_height="162dp"
                 android:layout_margin="10dp"
@@ -57,13 +54,13 @@
                 android:textSize="30dp" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/btn_paying"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/button_shape"
-                android:text="결제하기" />
+                android:text="상품결제" />
         </LinearLayout>
     </ScrollView>
 

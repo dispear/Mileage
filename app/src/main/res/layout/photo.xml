@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/tv_name"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -25,14 +25,14 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/iv_photo"
                 android:layout_width="match_parent"
                 android:layout_height="277dp"
                 android:layout_margin="10dp"
                 tools:srcCompat="@drawable/pet" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView1"
                 android:layout_width="match_parent"
                 android:padding="30dp"
                 android:layout_margin="10dp"
@@ -45,7 +45,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/btn_back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -54,7 +54,7 @@
                     android:text="뒤로 가기" />
 
                 <Button
-                    android:id="@+id/button3"
+                    android:id="@+id/btn_retry"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -64,7 +64,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tv_way"
                 android:layout_width="match_parent"
                 android:layout_height="531dp"
                 android:layout_margin="10dp"
