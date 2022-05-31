@@ -48,6 +48,7 @@
                 android:layout_height="140dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:background="@drawable/button_shape"
                 android:text="마일리지 상점" />
 
             <Button
@@ -56,6 +57,7 @@
                 android:layout_height="140dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:background="@drawable/button_shape"
                 android:text="이용 내역" />
 
         </LinearLayout>
