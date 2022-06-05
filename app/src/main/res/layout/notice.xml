@@ -23,7 +23,7 @@
         android:layout_marginTop="5dp"
         android:background="#FFFFFF"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/iconback" />
+        android:src="@drawable/iconback" />
 
 
     <ScrollView
@@ -58,7 +58,7 @@
                     android:layout_margin="10dp"
                     android:background="#FFFFFF"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/event_img1" />
+                    android:src="@drawable/event_img1" />
             </LinearLayout>
 
             <LinearLayout
@@ -83,7 +83,7 @@
                     android:layout_margin="10dp"
                     android:background="#FFFFFF"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/event_img2" />
+                    android:src="@drawable/event_img2" />
 
             </LinearLayout>
 

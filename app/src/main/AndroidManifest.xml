@@ -36,6 +36,10 @@
                     android:scheme="kakaoe5591a45ed7c371ed386ccca9c663ec6e" />
             </intent-filter>
         </activity>
+        <activity android:name=".notice"
+                    android:parentActivityName=".MainActivity" />
+        <activity android:name=".challenge"
+                    android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

@@ -23,7 +23,7 @@
         android:layout_marginTop="5dp"
         android:background="#FFFFFF"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/iconback" />
+        android:src="@drawable/iconback" />
 
     <ScrollView
         android:layout_marginTop="60dp"

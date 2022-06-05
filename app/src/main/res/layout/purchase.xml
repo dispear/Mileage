@@ -16,7 +16,7 @@
         android:text="구매하기"
         android:textSize="40dp" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -24,7 +24,7 @@
         android:layout_marginTop="5dp"
         android:background="#FFFFFF"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/iconback" />
+        android:src="@drawable/iconback" />
 
     <ScrollView
         android:layout_width="match_parent"
