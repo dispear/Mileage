@@ -22,7 +22,7 @@
         android:layout_marginTop="5dp"
         android:background="#FFFFFF"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/iconback" />
+        android:src="@drawable/iconback" />
 
 
 
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="100dp"
-            app:srcCompat="@drawable/kakao_login_large_wide" />
+            android:src="@drawable/kakao_login_large_wide" />
 
 
     </LinearLayout>

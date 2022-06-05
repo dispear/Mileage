@@ -40,6 +40,8 @@
                     android:parentActivityName=".MainActivity" />
         <activity android:name=".challenge"
                     android:parentActivityName=".MainActivity"/>
+        <activity android:name=".Login"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

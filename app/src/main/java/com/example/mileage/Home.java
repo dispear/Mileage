@@ -21,8 +21,18 @@ public class Home extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
+        btn_login = (Button) view.findViewById(R.id.btn_login);
         btn_notice = (Button) view.findViewById(R.id.btn_notice);
         btn_challenge = (Button) view.findViewById(R.id.btn_challenge);
+
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), Login.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
 
         btn_notice.setOnClickListener(new View.OnClickListener() {
             @Override
