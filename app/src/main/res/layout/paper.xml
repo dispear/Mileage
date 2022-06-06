@@ -42,7 +42,7 @@
                 android:layout_margin="10dp"
                 android:scaleType="fitCenter"
                 android:background="#FFFFFF"
-                tools:srcCompat="@drawable/openbox" />
+                android:src="@drawable/openbox" />
 
             <ListView
                 android:layout_width="match_parent"

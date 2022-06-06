@@ -10,12 +10,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class purchase extends AppCompatActivity {
+    ImageButton btnBack;
+    Button btnPurchase;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.purchase);
 
-        ImageButton btnBack=(ImageButton) findViewById(R.id.btn_back);
+        btnBack=(ImageButton) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,7 +26,7 @@ public class purchase extends AppCompatActivity {
             }
         });
 
-        Button btnPurchase=(Button) findViewById(R.id.btn_purchase);
+        btnPurchase=(Button) findViewById(R.id.btn_purchase);
         btnPurchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
