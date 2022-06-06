@@ -23,9 +23,6 @@ public class store extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.store);
 
-        Gallery gallery=(Gallery) findViewById(R.id.bGallery);
-        MyGalleryAdapter galAdapter=new MyGalleryAdapter(this);
-        gallery.setAdapter(galAdapter);
 
         final String[] storeList = {"살림연구소 친환경 천연 설거지비누 3종","슈가랩 친환경 생분해 빨대","제로웨이스트 천연 수세미", "친환경 생분해성 비닐봉투", "친환경 대나무 칫솔"
         ,"살림연구소 제로웨이스트 천연생분해 대나무칫솔/혀클리너","살림연구소 전자레인지 3분! 재사용하는 친환경 제습제","친환경 종이 완충재/포장재","나무 식기 세트","친환경 밀짚 런치박스 도시락통"};
@@ -53,33 +50,5 @@ public class store extends AppCompatActivity {
         });
     }
 
-    public class MyGalleryAdapter extends BaseAdapter {
-        Context context;
-
-        Integer[] brandId={R.drawable.brand1,R.drawable.brand2,R.drawable.brand3,R.drawable.brand4};
-        public MyGalleryAdapter(Context c){
-            context=c;
-        }
-
-        @Override
-        public int getCount() {
-            return 0;
-        }
-
-        @Override
-        public Object getItem(int i) {
-            return null;
-        }
-
-        @Override
-        public long getItemId(int i) {
-            return 0;
-        }
-
-        @Override
-        public View getView(int i, View view, ViewGroup viewGroup) {
-            return null;
-        }
     }
 
-}

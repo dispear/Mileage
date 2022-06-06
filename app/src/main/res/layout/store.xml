@@ -35,12 +35,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <Gallery
-                android:id="@+id/bGallery"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:spacing="5dp" />
-
             <ListView
                 android:id="@+id/sList"
                 android:layout_width="match_parent"
