@@ -56,7 +56,7 @@ public class store extends AppCompatActivity {
     public class MyGalleryAdapter extends BaseAdapter {
         Context context;
 
-        Integer[] brandId={};
+        Integer[] brandId={R.drawable.brand1,R.drawable.brand2,R.drawable.brand3,R.drawable.brand4};
         public MyGalleryAdapter(Context c){
             context=c;
         }
@@ -81,7 +81,5 @@ public class store extends AppCompatActivity {
             return null;
         }
     }
-
-
 
 }
