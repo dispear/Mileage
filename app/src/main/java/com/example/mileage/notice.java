@@ -30,7 +30,7 @@ public class notice extends Activity {
         ibLink1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/seoulfamilyc/222756296821"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/seoulkfem/222756495474"));
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class notice extends Activity {
         ibLink2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/seoulkfem/222756495474"));
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/seoulfamilyc/222756296821"));
                 startActivity(intent);
             }
         });
