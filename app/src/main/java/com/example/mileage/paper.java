@@ -1,5 +1,6 @@
 package com.example.mileage;
 
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class paper extends AppCompatActivity {
+    ImageButton btnBack, ibCategory;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -29,7 +32,7 @@ public class paper extends AppCompatActivity {
             }
         });
 
-        ImageButton btnBack=(ImageButton) findViewById(R.id.btn_back);
+        btnBack=(ImageButton) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +40,7 @@ public class paper extends AppCompatActivity {
             }
         });
 
-        ImageButton ibCategory=(ImageButton) findViewById(R.id.ib_category);
+        ibCategory=(ImageButton) findViewById(R.id.ib_category);
         ibCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

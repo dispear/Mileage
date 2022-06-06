@@ -14,13 +14,15 @@ import android.widget.ImageButton;
 
 
 public class RecycleInfo extends Fragment {
+    ImageButton imageButton;
+    Button btnPaper;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         ViewGroup rootView=(ViewGroup) inflater.inflate(R.layout.fragment_recycle_info,container,false);
 
-        ImageButton imageButton=rootView.findViewById(R.id.imageButton);
+        imageButton=rootView.findViewById(R.id.imageButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -29,7 +31,7 @@ public class RecycleInfo extends Fragment {
             }
         });
 
-        Button btnPaper=rootView.findViewById(R.id.btn_paper);
+        btnPaper=rootView.findViewById(R.id.btn_paper);
         btnPaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -12,14 +12,16 @@ import android.widget.Button;
 
 
 public class MileageMain extends Fragment {
+    Button btnToQR,btnToChal,btnStore;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         ViewGroup rootView=(ViewGroup) inflater.inflate(R.layout.fragment_mileage_main,container,false);
-        Button btnToQR=rootView.findViewById(R.id.btn_toQR);
-        Button btnToChal=rootView.findViewById(R.id.btn_tochal);
-        Button btnStore=rootView.findViewById(R.id.btn_store);
+        btnToQR=rootView.findViewById(R.id.btn_toQR);
+        btnToChal=rootView.findViewById(R.id.btn_tochal);
+        btnStore=rootView.findViewById(R.id.btn_store);
 
         btnToQR.setOnClickListener(new View.OnClickListener() {
             @Override

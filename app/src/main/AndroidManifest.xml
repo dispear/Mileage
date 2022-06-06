@@ -44,6 +44,17 @@
                     android:parentActivityName=".MainActivity"/>
         <activity android:name=".Login"
             android:parentActivityName=".MainActivity"/>
+
+        <activity android:name=".paper"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".paying"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".photo"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".purchase"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".store"
+            android:parentActivityName=".MainActivity"/>
     </application>
 
 </manifest>

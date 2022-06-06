@@ -10,12 +10,15 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class paying extends AppCompatActivity {
+    Button btnPaying;
+    ImageButton btnBack;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paying);
 
-        ImageButton btnBack=(ImageButton) findViewById(R.id.btn_back);
+        btnBack=(ImageButton) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,7 +26,7 @@ public class paying extends AppCompatActivity {
             }
         });
 
-        Button btnPaying=(Button) findViewById(R.id.btn_paying);
+        btnPaying=(Button) findViewById(R.id.btn_paying);
         btnPaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

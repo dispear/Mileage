@@ -11,12 +11,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class photo extends AppCompatActivity {
+    Button btnBack,btnRetry;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo);
 
-        Button btnBack=(Button) findViewById(R.id.btn_back);
+        btnBack=(Button) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -24,7 +25,7 @@ public class photo extends AppCompatActivity {
             }
         });
 
-        Button btnRetry=(Button)findViewById(R.id.btn_retry);
+        btnRetry=(Button)findViewById(R.id.btn_retry);
         btnRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
