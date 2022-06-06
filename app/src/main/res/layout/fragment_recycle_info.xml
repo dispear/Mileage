@@ -34,7 +34,7 @@
                 android:layout_marginTop="30dp"
                 android:background="#FFFFFF"
                 android:scaleType="fitCenter"
-                tools:src="@drawable/camera" />
+                android:src="@drawable/camera" />
 
             <SearchView
                 android:layout_width="match_parent"
