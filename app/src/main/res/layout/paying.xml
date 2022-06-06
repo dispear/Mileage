@@ -36,27 +36,41 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tv_have"
-                android:layout_width="match_parent"
-                android:layout_height="295dp"
-                android:layout_margin="10dp"
-                android:gravity="center_horizontal"
-                android:text="보유 마일리지, 결제 후 마일리지"
-                android:textSize="25dp" />
-
-            <TextView
                 android:id="@+id/tv_product"
                 android:layout_width="match_parent"
-                android:layout_height="162dp"
+                android:layout_height="102dp"
                 android:layout_margin="10dp"
-                android:gravity="center_horizontal"
-                android:text="결제할 제품"
+                android:background="@drawable/bottomline"
+                android:gravity="right"
+                android:text="결제할 제품\n살림연구소 친환경 천연 설거지비누 3종"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_have1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="right"
+                android:text="보유 마일리지\n-결제할 마일리지\n4600\n-4500"
+                android:background="@drawable/bottomline"
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_have2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="남을 마일리지 100"
+                android:textColor="@android:color/holo_red_dark"
                 android:textSize="30dp" />
 
             <Button
                 android:id="@+id/btn_paying"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
                 android:layout_gravity="center"
                 android:layout_margin="10dp"
                 android:background="@drawable/button_shape"
