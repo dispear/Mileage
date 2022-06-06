@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import androidx.annotation.Nullable;
-
 public class challenge extends Activity {
     ImageButton btn_back;
     @Override

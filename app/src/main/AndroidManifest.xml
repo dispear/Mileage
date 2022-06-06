@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <!-- 여기서 부터 밑에 까지 전체 추가해주세요 추가-->
+        <!-- 여기서 부터 밑에 까지 전체 추가-->
         <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
             <intent-filter>
@@ -35,7 +35,7 @@
 
                 <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
                 <data android:host="oauth"
-                    android:scheme="kakaoe5591a45ed7c371ed386ccca9c663ec6e" />
+                    android:scheme="kakao5591a45ed7c371ed386ccca9c663ec6e" />
             </intent-filter>
         </activity>
         <activity android:name=".notice"
