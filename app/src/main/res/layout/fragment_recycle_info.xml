@@ -38,6 +38,8 @@
 
             <SearchView
                 android:layout_width="match_parent"
+                android:background="#E8E7E7"
+                android:layout_margin="10dp"
                 android:layout_height="60dp" />
 
             <GridLayout
