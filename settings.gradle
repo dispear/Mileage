@@ -9,11 +9,10 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
-        mavenCentral()
-        // gradle 추가
+        jcenter()
         maven { url 'https://devrepo.kakao.com/nexus/content/groups/public/' }
+        mavenCentral()
     }
 }
-
 rootProject.name = "Mileage"
 include ':app'
