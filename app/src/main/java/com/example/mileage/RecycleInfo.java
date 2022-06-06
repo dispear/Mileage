@@ -22,7 +22,7 @@ public class RecycleInfo extends Fragment {
                              Bundle savedInstanceState) {
         ViewGroup rootView=(ViewGroup) inflater.inflate(R.layout.fragment_recycle_info,container,false);
 
-        imageButton=rootView.findViewById(R.id.imageButton);
+        imageButton= (ImageButton) rootView.findViewById(R.id.imageButton);
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

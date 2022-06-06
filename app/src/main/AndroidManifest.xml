@@ -44,6 +44,8 @@
                     android:parentActivityName=".MainActivity"/>
         <activity android:name=".Login"
             android:parentActivityName=".MainActivity"/>
+        <activity android:name=".writing"
+            android:parentActivityName=".MainActivity"/>
 
         <activity android:name=".paper"
             android:parentActivityName=".MainActivity"/>

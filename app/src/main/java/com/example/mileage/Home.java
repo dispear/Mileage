@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class Home extends Fragment {
     View view;
-    Button btn_login, btn_notice, btn_challenge;
+    Button btnlogin, btnnotice, btnchallenge;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -21,11 +21,11 @@ public class Home extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        btn_login = (Button) view.findViewById(R.id.btn_login);
-        btn_notice = (Button) view.findViewById(R.id.btn_notice);
-        btn_challenge = (Button) view.findViewById(R.id.btn_challenge);
+        btnlogin = (Button) view.findViewById(R.id.btn_login);
+        btnnotice = (Button) view.findViewById(R.id.btn_notice);
+        btnchallenge = (Button) view.findViewById(R.id.btn_challenge);
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
+        btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), Login.class);
@@ -34,7 +34,7 @@ public class Home extends Fragment {
             }
         });
 
-        btn_notice.setOnClickListener(new View.OnClickListener() {
+        btnnotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), notice.class);
@@ -43,7 +43,7 @@ public class Home extends Fragment {
             }
         });
 
-        btn_challenge.setOnClickListener(new View.OnClickListener() {
+        btnchallenge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), challenge.class);

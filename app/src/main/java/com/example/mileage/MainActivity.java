@@ -20,21 +20,21 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity{
-    Home fragment_home;
-    RecycleInfo fragment_recycle_info;
-    comunity fragment_comunity;
-    MileageMain fragment_milage_main;
+    Home fragmenthome;
+    RecycleInfo fragmentrecycleinfo;
+    comunity fragmentcomunity;
+    MileageMain fragmentmilagemain;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragment_home = new Home();
-        fragment_recycle_info = new RecycleInfo();
-        fragment_comunity = new comunity();
-        fragment_milage_main = new MileageMain();
+        fragmenthome = new Home();
+        fragmentrecycleinfo = new RecycleInfo();
+        fragmentcomunity = new comunity();
+        fragmentmilagemain = new MileageMain();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment_home).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmenthome).commit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -42,19 +42,19 @@ public class MainActivity extends AppCompatActivity{
                 switch (item.getItemId()){
                     case R.id.tab1:
                         Toast.makeText(getApplicationContext(), "첫 번째 탭이 선택됨", Toast.LENGTH_SHORT).show();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment_home).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmenthome).commit();
                         return true;
                     case R.id.tab2:
                         Toast.makeText(getApplicationContext(), "두 번째 탭이 선택됨", Toast.LENGTH_SHORT).show();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment_recycle_info).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentrecycleinfo).commit();
                         return true;
                     case R.id.tab3:
                         Toast.makeText(getApplicationContext(), "세 번째 탭이 선택됨", Toast.LENGTH_SHORT).show();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment_comunity).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentcomunity).commit();
                         return true;
                     case R.id.tab4:
                         Toast.makeText(getApplicationContext(), "네 번째 탭이 선택됨", Toast.LENGTH_SHORT).show();
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment_milage_main).commit();
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container,fragmentmilagemain).commit();
                         return true;
                 }
                 return false;
