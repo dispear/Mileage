@@ -37,8 +37,10 @@ public class store extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent =new Intent(getApplicationContext(),purchase.class);
-                startActivity(intent);
+                if (i==0){
+                    Intent intent =new Intent(getApplicationContext(),purchase.class);
+                    startActivity(intent);
+                }
             }
         });
 
