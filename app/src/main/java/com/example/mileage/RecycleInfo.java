@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.SearchView;
 
 import androidx.fragment.app.Fragment;
 
@@ -21,6 +22,7 @@ public class RecycleInfo extends Fragment {
     ImageButton imageButton;
     Button btnPaper;
     ImageView imageView;
+    SearchView searchView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -40,6 +42,26 @@ public class RecycleInfo extends Fragment {
                         startActivityForResult(i, 0);
                         break;
                 }
+                Intent intent =new Intent(getActivity(),photo.class);
+                startActivity(intent);
+            }
+        });
+
+        searchView=view.findViewById(R.id.tSearch);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String s) {
+                if(s.equals("paper"))
+                {
+                    Intent intent =new Intent(getActivity(),paper.class);
+                    startActivity(intent);
+                }
+                return true;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String s) {
+                return false;
             }
         });
 
