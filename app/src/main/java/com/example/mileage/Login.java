@@ -8,8 +8,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-
 import com.bumptech.glide.Glide;
 import com.kakao.sdk.auth.model.OAuthToken;
 import com.kakao.sdk.user.UserApiClient;
@@ -104,7 +102,7 @@ public class Login extends Activity {
                     Log.d(TAG,"invoke: age" + user.getKakaoAccount().getAgeRange());
 
                     nickName.setText(user.getKakaoAccount().getProfile().getNickname());
-
+                    // 동그라미 형태로 가져옴
                     Glide.with(profileImage).load(user.getKakaoAccount().
                             getProfile().getProfileImageUrl()).circleCrop().into(profileImage);
                     loginButton.setVisibility(View.GONE);
