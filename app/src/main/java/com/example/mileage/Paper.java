@@ -28,6 +28,29 @@ public class Paper extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch(i){
+                    case 0:
+                        AlertDialog.Builder dlg1=new AlertDialog.Builder(paper.this);
+                        dlg1.setTitle("가격표");
+                        dlg1.setMessage("종이류 분리배출 장소에 배출합니다.");
+                        dlg1.setPositiveButton("확인",null);
+                        dlg1.show();
+                        break;
+                    case 1:
+                        AlertDialog.Builder dlg2=new AlertDialog.Builder(paper.this);
+                        dlg2.setTitle("골판지");
+                        dlg2.setMessage("압착하여 종이류 분리배출 장소에 배출합니다.");
+                        dlg2.setPositiveButton("확인",null);
+                        dlg2.show();
+                        break;
+                    case 2:
+                        AlertDialog.Builder dlg3=new AlertDialog.Builder(paper.this);
+                        dlg3.setTitle("광고전단지");
+                        dlg3.setMessage("종이류 분리배출 방법대로 배출하되, 비닐코팅된 종이는 일반쓰레기로 배출합니다.");
+                        dlg3.setPositiveButton("확인",null);
+                        dlg3.show();
+                        break;
+                }
             }
         });
 
