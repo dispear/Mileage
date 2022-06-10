@@ -24,6 +24,10 @@ public class photo extends AppCompatActivity {
         btnRetry=(Button)findViewById(R.id.btn_retry);
         ivPhoto = (ImageView) findViewById(R.id.iv_photo);
 
+        // 카메라 이벤트
+        Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(i, 0);
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,7 +39,7 @@ public class photo extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 switch (view.getId()) {
-                    // 카메라촬영 클릭 이벤트
+                    // 카메라 재촬영 클릭 이벤트
                     case R.id.btn_retry:
                         // 카메라 기능을 Intent
                         Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

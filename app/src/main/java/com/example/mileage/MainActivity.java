@@ -1,23 +1,15 @@
 package com.example.mileage;
 
-import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity{
     Home Fhome;
@@ -33,6 +25,11 @@ public class MainActivity extends AppCompatActivity{
         Frecycleinfo = new RecycleInfo();
         Fcomunity = new comunity();
         Fmilagemain = new MileageMain();
+
+        // 접근 권한 여부
+        ActivityCompat.requestPermissions(this, new String[]
+                {android.Manifest.permission.INTERNET, android.Manifest.permission.CAMERA,
+                        android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE},MODE_PRIVATE);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.container,Fhome).commit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
