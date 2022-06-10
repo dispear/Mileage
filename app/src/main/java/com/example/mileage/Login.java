@@ -1,12 +1,13 @@
 package com.example.mileage;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.kakao.sdk.auth.model.OAuthToken;
@@ -17,7 +18,7 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 
-public class Login extends Activity {
+public class Login extends AppCompatActivity {
     private static final String TAG = "Login";
     TextView nickName;
     ImageView profileImage;
