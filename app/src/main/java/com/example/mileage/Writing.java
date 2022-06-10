@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 
-public class writing extends Activity {
+public class Writing extends Activity {
 
     ImageButton btnback;
     ImageView ivpicture;

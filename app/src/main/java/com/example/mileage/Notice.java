@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class notice extends Activity {
+public class Notice extends Activity {
 
     ImageButton btn_back, ibLink1, ibLink2;
 

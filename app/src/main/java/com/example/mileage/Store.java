@@ -1,21 +1,17 @@
 package com.example.mileage;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.Gallery;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class store extends AppCompatActivity {
+public class Store extends AppCompatActivity {
     ImageButton btnBack;
 
     @Override
@@ -35,7 +31,7 @@ public class store extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if (i==0){
-                    Intent intent =new Intent(getApplicationContext(),purchase.class);
+                    Intent intent =new Intent(getApplicationContext(), Purchase.class);
                     startActivity(intent);
                 }
             }

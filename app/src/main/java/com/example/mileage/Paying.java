@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class paying extends AppCompatActivity {
+public class Paying extends AppCompatActivity {
     Button btnPaying;
     ImageButton btnBack;
 
@@ -30,7 +30,7 @@ public class paying extends AppCompatActivity {
         btnPaying.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder dlg=new AlertDialog.Builder(paying.this);
+                AlertDialog.Builder dlg=new AlertDialog.Builder(Paying.this);
 
                 int millage=100;
                 if (millage<0){

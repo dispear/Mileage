@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class purchase extends AppCompatActivity {
+public class Purchase extends AppCompatActivity {
     ImageButton btnBack;
     Button btnPurchase;
 
@@ -30,7 +30,7 @@ public class purchase extends AppCompatActivity {
         btnPurchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getApplicationContext(),paying.class);
+                Intent intent =new Intent(getApplicationContext(), Paying.class);
                 startActivity(intent);
             }
         });

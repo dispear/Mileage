@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class photo extends AppCompatActivity {
+public class Photo extends AppCompatActivity {
     Button btnBack,btnRetry;
     ImageView ivPhoto;
 

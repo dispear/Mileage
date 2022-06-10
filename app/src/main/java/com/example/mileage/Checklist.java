@@ -5,12 +5,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class challenge extends Activity {
+import androidx.annotation.Nullable;
+
+public class Checklist extends Activity {
     ImageButton btnback;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.challenge);
+        setContentView(R.layout.check_list);
 
         btnback = (ImageButton) findViewById(R.id.btn_back);
         btnback.setOnClickListener(new View.OnClickListener() {

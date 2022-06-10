@@ -4,7 +4,7 @@ import android.app.Application;
 
 import com.kakao.sdk.common.KakaoSdk;
 
-public class kakaoApplication extends Application {
+public class KakaoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();

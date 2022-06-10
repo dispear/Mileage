@@ -14,7 +14,7 @@ import com.google.android.material.navigation.NavigationBarView;
 public class MainActivity extends AppCompatActivity{
     Home Fhome;
     RecycleInfo Frecycleinfo;
-    comunity Fcomunity;
+    Comunity Fcomunity;
     MileageMain Fmilagemain;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity{
 
         Fhome = new Home();
         Frecycleinfo = new RecycleInfo();
-        Fcomunity = new comunity();
+        Fcomunity = new Comunity();
         Fmilagemain = new MileageMain();
 
         // 접근 권한 여부

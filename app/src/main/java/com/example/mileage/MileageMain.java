@@ -36,7 +36,7 @@ public class MileageMain extends Fragment {
         btnToChal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(),challenge.class);
+                Intent intent =new Intent(getActivity(), Challenge.class);
                 startActivity(intent);
             }
         });
@@ -44,7 +44,7 @@ public class MileageMain extends Fragment {
         btnStore.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(),store.class);
+                Intent intent =new Intent(getActivity(), Store.class);
                 startActivity(intent);
             }
         });

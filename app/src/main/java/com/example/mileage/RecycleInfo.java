@@ -30,7 +30,7 @@ public class RecycleInfo extends Fragment {
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(),photo.class);
+                Intent intent =new Intent(getActivity(), Photo.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,7 @@ public class RecycleInfo extends Fragment {
             public boolean onQueryTextSubmit(String s) {
                 if(s.equals("paper"))
                 {
-                    Intent intent =new Intent(getActivity(),paper.class);
+                    Intent intent =new Intent(getActivity(), Paper.class);
                     startActivity(intent);
                 }
                 return true;
@@ -57,7 +57,7 @@ public class RecycleInfo extends Fragment {
         btnPaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(),paper.class);
+                Intent intent =new Intent(getActivity(), Paper.class);
                 startActivity(intent);
             }
         });

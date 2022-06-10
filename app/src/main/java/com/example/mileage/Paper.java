@@ -1,6 +1,5 @@
 package com.example.mileage;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,7 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class paper extends AppCompatActivity {
+public class Paper extends AppCompatActivity {
     ImageButton btnBack, ibCategory;
 
     @Override
@@ -44,7 +43,7 @@ public class paper extends AppCompatActivity {
         ibCategory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder dlg=new AlertDialog.Builder(paper.this);
+                AlertDialog.Builder dlg=new AlertDialog.Builder(Paper.this);
                 dlg.setTitle("종이류 분류 방법");
                 dlg.setMessage("책자, 노트\n비닐 코딩된 표지, 공책의 스프링 등을 제거한 후 배출.\n상자류\n테이프, 철핀 등을 제거한 후 압착하여 배출\n종이팩, 종이컵\n내용물을 비우고 물로 헹구어 압착하여 배출. 일반 종이류와 구별하여 종이팩 수거함으로 배출.");
                 dlg.setPositiveButton("확인",null);

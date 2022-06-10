@@ -10,6 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <uses-feature android:name="android.hardware.camera" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mileage"
-        android:name=".kakaoApplication">
+        android:name=".KakaoApplication">
         <activity
             android:name=".MainActivity"
              android:exported="true">
@@ -42,25 +43,25 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".notice"
+        <activity android:name=".Notice"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".challenge"
+        <activity android:name=".Challenge"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".Login"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".writing"
+        <activity android:name=".Writing"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".checklist"
+        <activity android:name=".Checklist"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".paper"
+        <activity android:name=".Paper"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".paying"
+        <activity android:name=".Paying"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".photo"
+        <activity android:name=".Photo"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".purchase"
+        <activity android:name=".Purchase"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".store"
+        <activity android:name=".Store"
             android:parentActivityName=".MainActivity"/>
     </application>
 
