@@ -41,10 +41,11 @@
                     android:scheme="kakao5591a45ed7c371ed386ccca9c663ec6e" />
             </intent-filter>
         </activity>
+
         <activity android:name=".notice"
-                    android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".challenge"
-                    android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".Login"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".writing"
