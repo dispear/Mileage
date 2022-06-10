@@ -1,7 +1,6 @@
 package com.example.mileage;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -56,6 +55,7 @@ public class photo extends AppCompatActivity {
 
         // 카메라 촬영을 하면 이미지뷰에 사진 삽입
         if(requestCode == 0 && resultCode == RESULT_OK) {
+            /*
             // Bundle로 데이터를 입력
             Bundle extras = data.getExtras();
 
@@ -64,6 +64,7 @@ public class photo extends AppCompatActivity {
 
             // 이미지뷰에 Bitmap으로 이미지를 입력
             ivPhoto.setImageBitmap(imageBitmap);
+            */
         }
     }
 }
