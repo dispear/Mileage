@@ -48,10 +48,11 @@ public class Login extends AppCompatActivity {
             public Unit invoke(OAuthToken oAuthToken, Throwable throwable) {
                 // 이때 토큰이 전달이 되면 로그인이 성공한 것이고 토큰이 전달되지 않았다면 로그인 실패
                 if(oAuthToken != null) {
-                    Log.d(TAG, "토큰 생성 실패");
+                    Log.d(TAG, "로그인 성공");
                 }
                 if (throwable != null) {
-                    Log.d(TAG, "토큰 전달 실패");
+                    Log.d(TAG, "로그인 실패");
+                    Log.e("signInKakao()", throwable.getLocalizedMessage());
                 }
                 updateKakaoLoginUi();
                 return null;
@@ -61,6 +62,7 @@ public class Login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // 카카오톡이 설치되어 있으면 카카오톡으로 로그인, 아니면 카카오계정으로 로그인
                 if(UserApiClient.getInstance().isKakaoTalkLoginAvailable(Login.this)) {
                     UserApiClient.getInstance().loginWithKakaoTalk(Login.this, callback);
                 }else {
