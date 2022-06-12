@@ -38,6 +38,7 @@ public class RecycleInfo extends Fragment {
         searchView=view.findViewById(R.id.tSearch);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
+            //정확히 paper를 입력했을때
             public boolean onQueryTextSubmit(String s) {
                 if(s.equals("paper"))
                 {

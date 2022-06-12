@@ -19,12 +19,14 @@ public class Paper extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paper);
 
+        //listview 내용입니다
         final String[] trashList = {"가격표","골판지","광고전단지","명함","쌀포대","서류봉투","신문지","전단지","종이상자","치킨박스","탁상달력"};
         ListView list=(ListView) findViewById(R.id.tList);
 
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,trashList);
         list.setAdapter(adapter);
 
+        //list 위에서부터 3개 선택 시 알림창
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {

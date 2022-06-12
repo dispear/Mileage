@@ -32,6 +32,7 @@ public class Paying extends AppCompatActivity {
             public void onClick(View view) {
                 AlertDialog.Builder dlg=new AlertDialog.Builder(Paying.this);
 
+                // 실제로 계산이 이루어지지 않습니다. millage 값을 0 이하로 바꾸면 교환 실패 메시지를 출력합니다.
                 int millage=100;
                 if (millage<0){
                     dlg.setTitle("교환 실패");
