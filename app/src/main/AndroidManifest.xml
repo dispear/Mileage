@@ -29,7 +29,8 @@
         </activity>
 
         <!-- 여기서 부터 밑에 까지 전체 추가-->
-        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />

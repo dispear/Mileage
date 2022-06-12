@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
                 }
                 if (throwable != null) {
                     Log.d(TAG, "로그인 실패");
-                    Log.e("signInKakao()", throwable.getLocalizedMessage());
+                    Log.e(TAG, throwable.getLocalizedMessage());
                 }
                 updateKakaoLoginUi();
                 return null;
@@ -94,15 +94,15 @@ public class Login extends AppCompatActivity {
                 if (user!=null){
 
                     // 유저의 아이디
-                    Log.d(TAG,"invoke: id" + user.getId());
+                    Log.i(TAG,"invoke: id" + user.getId());
                     // 유저의 어카운트정보에 이메일
-                    Log.d(TAG,"invoke: nickname" + user.getKakaoAccount().getEmail());
+                    Log.i(TAG,"invoke: nickname" + user.getKakaoAccount().getEmail());
                     // 유저의 어카운트 정보의 프로파일에 닉네임
-                    Log.d(TAG,"invoke: email" + user.getKakaoAccount().getProfile().getNickname());
+                    Log.i(TAG,"invoke: email" + user.getKakaoAccount().getProfile().getNickname());
                     // 유저의 어카운트 파일의 성별
-                    Log.d(TAG,"invoke: gender" + user.getKakaoAccount().getGender());
+                    Log.i(TAG,"invoke: gender" + user.getKakaoAccount().getGender());
                     // 유저의 어카운트 정보에 나이
-                    Log.d(TAG,"invoke: age" + user.getKakaoAccount().getAgeRange());
+                    Log.i(TAG,"invoke: age" + user.getKakaoAccount().getAgeRange());
 
                     nickName.setText(user.getKakaoAccount().getProfile().getNickname());
                     // 동그라미 형태로 가져옴
