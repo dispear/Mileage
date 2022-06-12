@@ -40,6 +40,7 @@ public class Challenge extends Activity {
             }
         });
 
+        // 첫번째 일일 챌린지
         if (pb1.getProgress() == 100) {
             btnDaily1.setEnabled(true);
             btnDaily1.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +53,101 @@ public class Challenge extends Activity {
                         public void onClick(DialogInterface dialogInterface, int i) {
                             btnDaily1.setEnabled(false);
                             btnDaily1.setText("이미 완료한 챌린지");
+                        }
+                    });
+                    dlg.show();
+                }
+            });
+        }
+        // 두번째 일일 챌린지
+        if (pb2.getProgress() == 100) {
+            btnDaily2.setEnabled(true);
+            btnDaily2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
+                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            btnDaily2.setEnabled(false);
+                            btnDaily2.setText("이미 완료한 챌린지");
+                        }
+                    });
+                    dlg.show();
+                }
+            });
+        }
+        // 세번째 일일 챌린지
+        if (pb3.getProgress() == 100) {
+            btnDaily3.setEnabled(true);
+            btnDaily3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
+                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            btnDaily3.setEnabled(false);
+                            btnDaily3.setText("이미 완료한 챌린지");
+                        }
+                    });
+                    dlg.show();
+                }
+            });
+        }
+        // 첫번째 주간 챌린지
+        if (pb4.getProgress() == 100) {
+            btnWeekly1.setEnabled(true);
+            btnWeekly1.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
+                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            btnWeekly1.setEnabled(false);
+                            btnWeekly1.setText("이미 완료한 챌린지");
+                        }
+                    });
+                    dlg.show();
+                }
+            });
+        }
+        // 두번째 주간 챌린지
+        if (pb5.getProgress() == 100) {
+            btnWeekly2.setEnabled(true);
+            btnWeekly2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
+                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            btnWeekly2.setEnabled(false);
+                            btnWeekly2.setText("이미 완료한 챌린지");
+                        }
+                    });
+                    dlg.show();
+                }
+            });
+        }
+        // 세번째 주간 챌린지
+        if (pb6.getProgress() == 100) {
+            btnWeekly3.setEnabled(true);
+            btnWeekly3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
+                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            btnWeekly3.setEnabled(false);
+                            btnWeekly3.setText("이미 완료한 챌린지");
                         }
                     });
                     dlg.show();

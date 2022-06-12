@@ -101,6 +101,7 @@
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:background="@drawable/button_shape"
+                    android:enabled="false"
                     android:text="1km 걷기"
                     android:textSize="40dp" />
 
@@ -139,6 +140,7 @@
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:background="@drawable/button_shape"
+                    android:enabled="false"
                     android:text="분리배출 15회"
                     android:textSize="40dp" />
 
@@ -160,6 +162,7 @@
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:background="@drawable/button_shape"
+                    android:enabled="false"
                     android:text="플라스틱류 배출 10회"
                     android:textSize="40dp" />
 
@@ -181,6 +184,7 @@
                     android:layout_margin="10dp"
                     android:gravity="center"
                     android:background="@drawable/button_shape"
+                    android:enabled="false"
                     android:text="5km 걷기"
                     android:textSize="40dp" />
 
