@@ -28,6 +28,7 @@ public class Comunity extends Fragment {
         ibwrite = (ImageButton) view.findViewById(R.id.ib_write);
         post1 = (TextView) view.findViewById(R.id.tv_post1);
 
+        // 글 작성 버튼
         ibwrite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +38,7 @@ public class Comunity extends Fragment {
             }
         });
 
+        // searchview 검색 키워드 지정
         searchView=view.findViewById(R.id.csearch);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
@@ -55,6 +57,7 @@ public class Comunity extends Fragment {
             }
         });
 
+        // 게시글 클릭시 화면 전환
         post1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

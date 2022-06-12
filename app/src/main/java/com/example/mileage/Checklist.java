@@ -15,6 +15,7 @@ public class Checklist extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.check_list);
 
+        // 뒤로 가기 버튼
         btnback = (ImageButton) findViewById(R.id.btn_back);
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override

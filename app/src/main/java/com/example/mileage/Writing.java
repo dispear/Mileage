@@ -23,6 +23,7 @@ public class Writing extends Activity {
         btnback = (ImageButton) findViewById(R.id.btn_back);
         ivpicture = (ImageView) findViewById(R.id.iv_picture);
 
+        // 뒤로가기 버튼
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,6 +31,7 @@ public class Writing extends Activity {
             }
         });
 
+        // 사진 첨부 눌렀을 때 갤러리 연결
         ivpicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

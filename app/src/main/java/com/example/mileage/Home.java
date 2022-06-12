@@ -24,6 +24,7 @@ public class Home extends Fragment {
         btnnotice = (Button) view.findViewById(R.id.btn_notice);
         btnchallenge = (Button) view.findViewById(R.id.btn_challenge);
 
+        // 로그인 버튼 화면 전환
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,6 +34,7 @@ public class Home extends Fragment {
             }
         });
 
+        // 공지사항 화면 전환
         btnnotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,6 +44,7 @@ public class Home extends Fragment {
             }
         });
 
+        // 챌린지 화면 전환
         btnchallenge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

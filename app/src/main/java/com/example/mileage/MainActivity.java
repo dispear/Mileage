@@ -12,6 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity{
+
     Home Fhome;
     RecycleInfo Frecycleinfo;
     Comunity Fcomunity;
@@ -57,5 +58,6 @@ public class MainActivity extends AppCompatActivity{
                 return false;
             }
         });
+
     }
 }
