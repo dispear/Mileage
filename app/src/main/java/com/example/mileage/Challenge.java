@@ -104,7 +104,7 @@ public class Challenge extends Activity {
                 @Override
                 public void onClick(View view) {
                     AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
-                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setMessage("챌린지 완료, 500 마일리지 획득");
                     dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -123,7 +123,7 @@ public class Challenge extends Activity {
                 @Override
                 public void onClick(View view) {
                     AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
-                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setMessage("챌린지 완료, 500 마일리지 획득");
                     dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
@@ -142,7 +142,7 @@ public class Challenge extends Activity {
                 @Override
                 public void onClick(View view) {
                     AlertDialog.Builder dlg = new AlertDialog.Builder(Challenge.this);
-                    dlg.setMessage("챌린지 완료, 100 마일리지 획득");
+                    dlg.setMessage("챌린지 완료, 500 마일리지 획득");
                     dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {

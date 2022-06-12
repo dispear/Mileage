@@ -29,8 +29,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -38,6 +38,21 @@
             android:layout_weight="1"
             android:gravity="center"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="로그인 안내"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/tv_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서비스 이용을 위해 로그인 해주세요."
+                android:textSize="25dp" />
+
 
             <ImageView
                 android:id="@+id/iv_profile"
@@ -58,14 +73,18 @@
             android:layout_marginTop="100dp"
             android:layout_marginBottom="100dp"
             android:src="@drawable/kakao_login_large_wide"
-            android:visibility="gone"/> // 로그인 시 보이기 위하여 gone로 설정해줍니다.
+            android:visibility="gone" />
+        // 로그인 시 보이기 위하여 gone로 설정해줍니다.
 
         <Button
             android:id="@+id/btn_logout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/button_shape"
             android:text="로그아웃"
-            android:visibility="gone"/> // 로그인 시 보이기 위하여 gone로 설정해줍니다.
+            android:visibility="gone" />
+        // 로그인 시 보이기 위하여 gone로 설정해줍니다.
 
     </LinearLayout>
 </FrameLayout>

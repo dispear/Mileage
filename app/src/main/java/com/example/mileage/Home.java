@@ -2,30 +2,29 @@ package com.example.mileage;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.fragment.app.Fragment;
+
 public class Home extends Fragment {
     View view;
-    Button btnlogin, btnnotice, btnchallenge;
+    Button btnLogin, btnNotice, btnChallenge;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // 프레그먼트 화면 뷰를 객체화
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        btnlogin = (Button) view.findViewById(R.id.btn_login);
-        btnnotice = (Button) view.findViewById(R.id.btn_notice);
-        btnchallenge = (Button) view.findViewById(R.id.btn_challenge);
+        btnLogin = (Button) view.findViewById(R.id.btn_login);
+        btnNotice = (Button) view.findViewById(R.id.btn_notice);
+        btnChallenge = (Button) view.findViewById(R.id.btn_challenge);
 
         // 로그인 버튼 화면 전환
-        btnlogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), Login.class);
@@ -33,9 +32,8 @@ public class Home extends Fragment {
                 startActivity(intent);
             }
         });
-
         // 공지사항 화면 전환
-        btnnotice.setOnClickListener(new View.OnClickListener() {
+        btnNotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), Notice.class);
@@ -43,9 +41,8 @@ public class Home extends Fragment {
                 startActivity(intent);
             }
         });
-
         // 챌린지 화면 전환
-        btnchallenge.setOnClickListener(new View.OnClickListener() {
+        btnChallenge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), Challenge.class);

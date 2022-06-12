@@ -46,8 +46,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="제목"
                     android:paddingLeft="40dp"
+                    android:text="제목"
                     android:textAlignment="center"
                     android:textSize="20dp" />
 
@@ -96,18 +96,18 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="40dp"
                     android:layout_weight="1"
-                    android:textSize="20dp"
-                    android:text="내용" />
+                    android:paddingLeft="40dp"
+                    android:text="내용"
+                    android:textSize="20dp" />
 
                 <EditText
                     android:id="@+id/edt_content"
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
-                    android:layout_weight="1"
                     android:layout_margin="25dp"
-                    android:background="@drawable/outline"/>
+                    android:layout_weight="1"
+                    android:background="@drawable/outline" />
             </LinearLayout>
 
             <Button

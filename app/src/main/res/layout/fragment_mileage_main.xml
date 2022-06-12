@@ -16,18 +16,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
+            android:background="@drawable/bottomline"
             android:gravity="center"
             android:text="마일리지"
             android:textAlignment="center"
-            android:background="@drawable/bottomline"
             android:textSize="40dp" />
 
         <TextView
             android:id="@+id/tv_mileage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
             android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
             android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
             android:text="내 보유 마일리지 : 100"
@@ -51,7 +51,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_toQR"
+                android:id="@+id/btn_to_QR"
                 android:layout_width="200dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"
@@ -60,7 +60,7 @@
                 android:text="QR코드로 적립하기" />
 
             <Button
-                android:id="@+id/btn_tochal"
+                android:id="@+id/btn_to_chal"
                 android:layout_width="200dp"
                 android:layout_height="100dp"
                 android:layout_margin="5dp"

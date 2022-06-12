@@ -20,34 +20,36 @@ import kotlin.jvm.functions.Function2;
 
 public class Login extends AppCompatActivity {
     private static final String TAG = "Login";
-    private TextView nickName;
+    private TextView nickName, tvInfo1, tvInfo2;
     private ImageView profileImage;
     private View loginButton, logoutButton;
-    private ImageButton btn_back;
+    private ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
 
+        tvInfo1 = (TextView) findViewById(R.id.tv_info1);
+        tvInfo2 = (TextView) findViewById(R.id.tv_info2);
         nickName = (TextView) findViewById(R.id.tv_nickname);
         profileImage = (ImageView) findViewById(R.id.iv_profile);
         loginButton = (View) findViewById(R.id.iv_login);
         logoutButton = (View) findViewById(R.id.btn_logout);
-        btn_back = (ImageButton) findViewById(R.id.btn_back);
+        btnBack = (ImageButton) findViewById(R.id.btn_back);
 
-        btn_back.setOnClickListener(new View.OnClickListener() {
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-
-        Function2<OAuthToken, Throwable, Unit> callback = new  Function2<OAuthToken, Throwable, Unit>() {
+        // 콜백함수 선언
+        Function2<OAuthToken, Throwable, Unit> callback = new Function2<OAuthToken, Throwable, Unit>() {
             @Override
             public Unit invoke(OAuthToken oAuthToken, Throwable throwable) {
                 // 이때 토큰이 전달이 되면 로그인이 성공한 것이고 토큰이 전달되지 않았다면 로그인 실패
-                if(oAuthToken != null) {
+                if (oAuthToken != null) {
                     Log.d(TAG, "로그인 성공");
                 }
                 if (throwable != null) {
@@ -63,9 +65,9 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // 카카오톡이 설치되어 있으면 카카오톡으로 로그인, 아니면 카카오계정으로 로그인
-                if(UserApiClient.getInstance().isKakaoTalkLoginAvailable(Login.this)) {
+                if (UserApiClient.getInstance().isKakaoTalkLoginAvailable(Login.this)) {
                     UserApiClient.getInstance().loginWithKakaoTalk(Login.this, callback);
-                }else {
+                } else {
                     UserApiClient.getInstance().loginWithKakaoAccount(Login.this, callback);
                 }
             }
@@ -86,32 +88,36 @@ public class Login extends AppCompatActivity {
         updateKakaoLoginUi();
     }
 
-    private  void updateKakaoLoginUi(){
+    private void updateKakaoLoginUi() {
         UserApiClient.getInstance().me(new Function2<User, Throwable, Unit>() {
             @Override
             public Unit invoke(User user, Throwable throwable) {
                 // 로그인이 되어있으면
-                if (user!=null){
+                if (user != null) {
 
                     // 유저의 아이디
-                    Log.i(TAG,"invoke: id" + user.getId());
+                    Log.i(TAG, "invoke: id" + user.getId());
                     // 유저의 어카운트정보에 이메일
-                    Log.i(TAG,"invoke: nickname" + user.getKakaoAccount().getEmail());
+                    Log.i(TAG, "invoke: nickname" + user.getKakaoAccount().getEmail());
                     // 유저의 어카운트 정보의 프로파일에 닉네임
-                    Log.i(TAG,"invoke: email" + user.getKakaoAccount().getProfile().getNickname());
+                    Log.i(TAG, "invoke: email" + user.getKakaoAccount().getProfile().getNickname());
                     // 유저의 어카운트 파일의 성별
-                    Log.i(TAG,"invoke: gender" + user.getKakaoAccount().getGender());
+                    Log.i(TAG, "invoke: gender" + user.getKakaoAccount().getGender());
                     // 유저의 어카운트 정보에 나이
-                    Log.i(TAG,"invoke: age" + user.getKakaoAccount().getAgeRange());
+                    Log.i(TAG, "invoke: age" + user.getKakaoAccount().getAgeRange());
 
+                    tvInfo1.setVisibility(View.GONE);
+                    tvInfo2.setVisibility(View.GONE);
                     nickName.setText(user.getKakaoAccount().getProfile().getNickname());
                     // 동그라미 형태로 가져옴
                     Glide.with(profileImage).load(user.getKakaoAccount().
                             getProfile().getProfileImageUrl()).circleCrop().into(profileImage);
                     loginButton.setVisibility(View.GONE);
                     logoutButton.setVisibility(View.VISIBLE);
-                }else {
+                } else {
                     // 로그인이 되어 있지 않다면 위와 반대로
+                    tvInfo1.setVisibility(View.VISIBLE);
+                    tvInfo2.setVisibility(View.VISIBLE);
                     nickName.setText(null);
                     profileImage.setImageBitmap(null);
                     loginButton.setVisibility(View.VISIBLE);

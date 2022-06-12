@@ -23,25 +23,28 @@ public class RecycleInfo extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        // 프레그먼트 화면 뷰를 객체화
         view = inflater.inflate(R.layout.fragment_recycle_info, container, false);
 
         imageView = (ImageView) view.findViewById(R.id.imageView);
-        imageButton= (ImageButton) view.findViewById(R.id.imageButton);
+        imageButton = (ImageButton) view.findViewById(R.id.imageButton);
+        searchView = view.findViewById(R.id.tSearch);
+        btnPaper = view.findViewById(R.id.btn_paper);
+
+        // 촬영기능 화면으로 이동
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(), Photo.class);
+                Intent intent = new Intent(getActivity(), Photo.class);
                 startActivity(intent);
             }
         });
-
-        searchView=view.findViewById(R.id.tSearch);
+        // 분류법 검색시 해당 화면으로 이동
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String s) {
-                if(s.equals("paper"))
-                {
-                    Intent intent =new Intent(getActivity(), Paper.class);
+                if (s.equals("paper")) {
+                    Intent intent = new Intent(getActivity(), Paper.class);
                     startActivity(intent);
                 }
                 return true;
@@ -52,12 +55,11 @@ public class RecycleInfo extends Fragment {
                 return false;
             }
         });
-
-        btnPaper=view.findViewById(R.id.btn_paper);
+        // 클릭시에도 해당 화면으로 이동
         btnPaper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getActivity(), Paper.class);
+                Intent intent = new Intent(getActivity(), Paper.class);
                 startActivity(intent);
             }
         });
