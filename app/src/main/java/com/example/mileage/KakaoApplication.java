@@ -8,6 +8,7 @@ public class KakaoApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        KakaoSdk.init(this, "5591a45ed7c371ed386ccca9c663ec6e");
+        // 카카오 SDK 사용을 위해 초기화
+        KakaoSdk.init(this, "49cfa7f550afa77b33051786bd934cee");
     }
 }

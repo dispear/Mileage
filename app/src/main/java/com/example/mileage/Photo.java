@@ -11,16 +11,16 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Photo extends AppCompatActivity {
-    Button btnBack,btnRetry;
+    Button btnBack, btnRetry;
     ImageView ivPhoto;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState){
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.photo);
 
-        btnBack=(Button) findViewById(R.id.btn_back);
-        btnRetry=(Button)findViewById(R.id.btn_retry);
+        btnBack = (Button) findViewById(R.id.btn_back);
+        btnRetry = (Button) findViewById(R.id.btn_retry);
         ivPhoto = (ImageView) findViewById(R.id.iv_photo);
 
         // 카메라 이벤트
@@ -50,11 +50,11 @@ public class Photo extends AppCompatActivity {
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)    {
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
         // 카메라 촬영을 하면 이미지뷰에 사진 삽입
-        if(requestCode == 0 && resultCode == RESULT_OK) {
+        if (requestCode == 0 && resultCode == RESULT_OK) {
             /*
             // Bundle로 데이터를 입력
             Bundle extras = data.getExtras();

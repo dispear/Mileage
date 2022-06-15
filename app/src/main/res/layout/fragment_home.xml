@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
+        android:background="@drawable/bottomline"
         android:gravity="center"
         android:text="Home"
         android:textAlignment="center"
-        android:background="@drawable/bottomline"
         android:textSize="40dp" />
 
     <LinearLayout
@@ -32,12 +32,20 @@
             android:layout_marginBottom="100dp"
             android:src="@drawable/infotrash" />
 
+        <TextView
+            android:id="@+id/tv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
         <Button
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="100dp"
+            android:background="@drawable/button_shape"
             android:text="로그인" />
 
         <LinearLayout
@@ -50,6 +58,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:background="@drawable/button_shape"
                 android:text="공지사항" />
 
             <Button
@@ -57,6 +66,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+                android:background="@drawable/button_shape"
                 android:text="챌린지" />
 
         </LinearLayout>

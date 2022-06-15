@@ -34,9 +34,9 @@
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="match_parent"
-                android:padding="30dp"
-                android:layout_margin="10dp"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:padding="30dp"
                 android:text="바코드를 정확하게 인식하지 못했다면 재촬영을 눌러주세요" />
 
             <LinearLayout

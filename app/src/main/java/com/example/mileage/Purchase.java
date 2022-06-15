@@ -14,23 +14,24 @@ public class Purchase extends AppCompatActivity {
     Button btnPurchase;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState){
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.purchase);
 
-        btnBack=(ImageButton) findViewById(R.id.btn_back);
+        btnBack = (ImageButton) findViewById(R.id.btn_back);
+        btnPurchase = (Button) findViewById(R.id.btn_purchase);
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-
-        btnPurchase=(Button) findViewById(R.id.btn_purchase);
+        // 결제하기 화면으로 이동
         btnPurchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent =new Intent(getApplicationContext(), Paying.class);
+                Intent intent = new Intent(getApplicationContext(), Paying.class);
                 startActivity(intent);
             }
         });
