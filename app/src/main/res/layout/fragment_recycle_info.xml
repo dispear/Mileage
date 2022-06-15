@@ -100,11 +100,6 @@
                     android:background="@drawable/sponge"
                     android:text="스티로폼" />
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:src="@tools:sample/avatars" />
             </GridLayout>
         </LinearLayout>
     </ScrollView>

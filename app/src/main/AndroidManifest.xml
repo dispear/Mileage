@@ -1,67 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mileage">
-
-    <!-- 인터넷 사용 권한 설정 추가-->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 카메라 사용 권한 설정 추가-->
+    <!-- 인터넷 사용 권한 설정 추가 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 카메라 사용 권한 설정 추가 -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.camera" />
 
     <application
+        android:name=".KakaoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Mileage"
-        android:name=".KakaoApplication">
+        android:theme="@style/Theme.Mileage">
         <activity
             android:name=".MainActivity"
-             android:exported="true">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 여기서 부터 밑에 까지 전체 추가-->
-        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+        </activity> <!-- 여기서 부터 밑에 까지 전체 추가 -->
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
-                <data android:host="oauth"
+                <data
+                    android:host="oauth"
                     android:scheme="kakao5591a45ed7c371ed386ccca9c663ec6e" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".Notice"
+        <activity
+            android:name=".Notice"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".Challenge"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Login"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Writing"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Checklist"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Paper"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Paying"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Photo"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Purchase"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Store"
+        <activity
+            android:name=".Challenge"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Writing"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Checklist"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Paper"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Paying"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Photo"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Purchase"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Store"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Mpoint"
             android:parentActivityName=".MainActivity"/>
     </application>
 
