@@ -12,18 +12,18 @@ import androidx.fragment.app.Fragment;
 
 public class MileageMain extends Fragment {
     View view;
-    Button btnToQR,btnToChal,btnStore;
+    Button btnBar,btnToChal,btnStore;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_mileage_main, container, false);
-        btnToQR= view.findViewById(R.id.btn_toQR);
+        btnBar= view.findViewById(R.id.btn_Bar);
         btnToChal=view.findViewById(R.id.btn_tochal);
         btnStore=view.findViewById(R.id.btn_store);
 
-        btnToQR.setOnClickListener(new View.OnClickListener() {
+        btnBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(getActivity(), Mpoint.class);
