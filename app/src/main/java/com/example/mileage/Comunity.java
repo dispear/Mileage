@@ -46,6 +46,8 @@ public class Comunity extends Fragment {
             return new MainViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main, parent, false));
         }
 
+        //position에 해당하는 데이터를 ViewHolder의 itemView에 표시
+        //boardList의 데이터를 사용하여 ViewHolder의 레이아웃을 채움
         @Override
         public void onBindViewHolder(@NonNull MainViewHolder holder, int position) {
             Board data = boardList.get(position);
@@ -53,18 +55,20 @@ public class Comunity extends Fragment {
             holder.NameTextView.setText(data.getName());
         }
 
+        //전체 데이터 개수 리턴
         @Override
         public int getItemCount() {
             return boardList.size();
         }
 
+        //itemview를 저장하는 ViewHolder 클래스
         class MainViewHolder extends RecyclerView.ViewHolder {
             private TextView TitleTextView;
             private TextView NameTextView;
 
             public MainViewHolder(View itemView) {
                 super(itemView);
-
+                // itemView를 클릭했을 때 checklist.class로 화면전환이 가능하도록 intent를 설정(게시글 클릭 시 게시글 확인으로 넘어감)
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
@@ -84,12 +88,19 @@ public class Comunity extends Fragment {
                              Bundle savedInstanceState) {
         // 프레그먼트 화면 뷰를 객체화
         view = inflater.inflate(R.layout.fragment_comunity, container, false);
-
         Fabwrite = (FloatingActionButton) view.findViewById(R.id.F_btn);
-        comunityview = (RecyclerView) view.findViewById(R.id.C_list);
+        //setHasFixedSize를 true로 설정함으로써 item의 크기가 변경되지 않는다는 것을 명시
         comunityview.setHasFixedSize(true);
+
+        //RecyclerView에 LinearLayoutManager 객체 지정
+        comunityview = (RecyclerView) view.findViewById(R.id.C_list);
+        //LinearLayoutManager는 항목을 1차원 목록으로 정렬
         comunityview.setLayoutManager(new LinearLayoutManager(getActivity()));
-        comunityview.setAdapter(adapter);
+
+        //RecyclerView에 MainAdapter 객체 지정
+       comunityview.setAdapter(adapter);
+
+        //RecyclerView에 표시할 데이터 리스트 생성
         boardList = new ArrayList<>();
         boardList.add(new Board(null, "반갑습니다.",null,"android"));
         boardList.add(new Board(null, "Hello",null,"server"));
@@ -103,7 +114,7 @@ public class Comunity extends Fragment {
         boardList.add(new Board(null, "배고파요",null,"hu"));
         boardList.add(new Board(null, "보고싶읍니다",null,"부자"));
 
-
+        //boardList를 ArrayList로 선언해서 .add로 데이터를 넣어준 후 adapter에 boardList를 넣어준다.
         adapter = new MainAdapter(boardList);
         comunityview.setAdapter(adapter);
 

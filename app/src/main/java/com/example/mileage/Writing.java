@@ -61,6 +61,7 @@ public class Writing extends Activity implements View.OnClickListener {
         });
     }
 
+    //등록 버튼 클릭 OnClick 함수
     @Override
     public void onClick(View v) {
         Map<String, Object> post = new HashMap<>();
@@ -68,18 +69,8 @@ public class Writing extends Activity implements View.OnClickListener {
         post.put("title",writeTitle.getText().toString());
         post.put("content",writeContent.getText().toString());
 
-        Dbase.collection("board").add(post).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(Writing.this,"업로드 성공",Toast.LENGTH_SHORT).show();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(Writing.this,"업로드 실패",Toast.LENGTH_SHORT).show();
-            }
-        });
-
+        //board라는 컬렉션안의 post라는 문서를 추가하고 게시글 작성화면에서 입력한 title, content를 firebase에 저장
+        //성공하면 "업로드 성공", 실패하면 "업로드 실패" Toast 띄움
         Dbase.collection("board").document(id).set(post)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
