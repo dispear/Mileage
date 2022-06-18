@@ -1,5 +1,7 @@
 package com.example.mileage;
 
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -24,6 +26,8 @@ public class Login extends AppCompatActivity {
     private ImageView profileImage;
     private View loginButton, logoutButton;
     private ImageButton btnBack;
+    DBHelper dbHelper;
+    SQLiteDatabase sqlDB;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +41,7 @@ public class Login extends AppCompatActivity {
         loginButton = (View) findViewById(R.id.iv_login);
         logoutButton = (View) findViewById(R.id.btn_logout);
         btnBack = (ImageButton) findViewById(R.id.btn_back);
+        dbHelper = new DBHelper(this, "Mileage", null, 1);
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +49,7 @@ public class Login extends AppCompatActivity {
                 finish();
             }
         });
+
         // 콜백함수 선언
         Function2<OAuthToken, Throwable, Unit> callback = new Function2<OAuthToken, Throwable, Unit>() {
             @Override
@@ -95,12 +101,12 @@ public class Login extends AppCompatActivity {
                 // 로그인이 되어있으면
                 if (user != null) {
 
-                    // 유저의 아이디
-                    Log.i(TAG, "invoke: id" + user.getId());
-                    // 유저의 어카운트정보에 이메일
-                    Log.i(TAG, "invoke: nickname" + user.getKakaoAccount().getEmail());
-                    // 유저의 어카운트 정보의 프로파일에 닉네임
-                    Log.i(TAG, "invoke: email" + user.getKakaoAccount().getProfile().getNickname());
+                    // 유저의 고유아이디
+                    Log.d(TAG, "invoke: id" + user.getId());
+                    // 유저의 어카운트정보에 닉네임
+                    Log.i(TAG, "invoke: nickname" + user.getKakaoAccount().getProfile().getNickname());
+                    // 유저의 어카운트 정보의 이메일
+                    Log.i(TAG, "invoke: email" + user.getKakaoAccount().getEmail());
                     // 유저의 어카운트 파일의 성별
                     Log.i(TAG, "invoke: gender" + user.getKakaoAccount().getGender());
                     // 유저의 어카운트 정보에 나이
@@ -109,11 +115,25 @@ public class Login extends AppCompatActivity {
                     tvInfo1.setVisibility(View.GONE);
                     tvInfo2.setVisibility(View.GONE);
                     nickName.setText(user.getKakaoAccount().getProfile().getNickname());
-                    // 동그라미 형태로 가져옴
+                    // 프로필 사진을 동그라미 형태로 가져옴
                     Glide.with(profileImage).load(user.getKakaoAccount().
                             getProfile().getProfileImageUrl()).circleCrop().into(profileImage);
                     loginButton.setVisibility(View.GONE);
                     logoutButton.setVisibility(View.VISIBLE);
+
+
+                    sqlDB = dbHelper.getWritableDatabase();
+                    // 이미 데이터베이스가 있을 때 로그인 화면으로 이동하며 AVD가 튕겨 어쩔 수 없이 초기화 해줌
+                    dbHelper.onUpgrade(sqlDB,1,2);
+                    long newId = user.getId();
+
+                    // 유저의 고유 카카오 아이디를 바탕으로 DB 삽입
+                    sqlDB.execSQL("INSERT INTO Mileage VALUES ("+newId+",0)");
+                    sqlDB.close();
+
+                    // 고유 카카오 아이디를 intent를 통해 전달
+                    Intent intent1 = new Intent(Login.this, Challenge.class);
+                    intent1.putExtra("id", newId);
                 } else {
                     // 로그인이 되어 있지 않다면 위와 반대로
                     tvInfo1.setVisibility(View.VISIBLE);

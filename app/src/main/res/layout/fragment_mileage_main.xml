@@ -30,7 +30,7 @@
             android:layout_marginTop="60dp"
             android:layout_marginRight="10dp"
             android:gravity="center_horizontal"
-            android:text="내 보유 마일리지 : 100"
+            android:text="내 보유 마일리지 :"
             android:textSize="40dp" />
 
         <TextView

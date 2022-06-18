@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         fragComunity = new Comunity();
         fragMilagemain = new MileageMain();
 
+
         // 접근 권한 여부
         ActivityCompat.requestPermissions(this, new String[]
                 {android.Manifest.permission.INTERNET, android.Manifest.permission.CAMERA,
