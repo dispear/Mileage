@@ -11,10 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Mpoint extends AppCompatActivity {
 
-    Button btnBack,btnRecycle;
+    Button btnBack, btnRecycle;
 
-
-    protected void onCreate(@Nullable Bundle savedInstanceState){
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mpoint);
 
@@ -22,21 +21,21 @@ public class Mpoint extends AppCompatActivity {
         Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(i, 0);
 
-            btnBack=(Button) findViewById(R.id.btn_purchase);
-            btnBack.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    finish();
-                }
-            });
-            btnRecycle=(Button) findViewById(R.id.btn_purchase);
-            btnRecycle.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent =new Intent(getApplicationContext(), Photo.class);
-                    startActivity(intent);
-                }
-            });
+        btnBack = (Button) findViewById(R.id.btn_purchase);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+        btnRecycle = (Button) findViewById(R.id.btn_purchase);
+        btnRecycle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Photo.class);
+                startActivity(intent);
+            }
+        });
 
-        }
     }
+}

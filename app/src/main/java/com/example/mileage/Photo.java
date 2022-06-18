@@ -53,7 +53,7 @@ public class Photo extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        // 카메라 촬영을 하면 이미지뷰에 사진 삽입
+        // 카메라 촬영을 하면 이미지뷰에 찍은 사진을 삽입
         if (requestCode == 0 && resultCode == RESULT_OK) {
             /*
             // Bundle로 데이터를 입력

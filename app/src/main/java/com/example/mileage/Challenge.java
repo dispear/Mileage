@@ -3,7 +3,6 @@ package com.example.mileage;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
@@ -36,10 +35,6 @@ public class Challenge extends Activity {
         pb5 = (ProgressBar) findViewById(R.id.progressBar5);
         pb6 = (ProgressBar) findViewById(R.id.progressBar6);
         dbHelper = new DBHelper(this,"Mileage",null,1);
-
-        // Login의 id 데이터를 받을 intent
-        Intent intent = getIntent();
-        String id = intent.getStringExtra("id");
 
         btnBack = (ImageButton) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {

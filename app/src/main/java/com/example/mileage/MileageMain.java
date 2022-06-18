@@ -29,12 +29,14 @@ public class MileageMain extends Fragment {
         btnBar= view.findViewById(R.id.btn_Bar);
         btnToChal=view.findViewById(R.id.btn_tochal);
         btnStore=view.findViewById(R.id.btn_store);
+        dbHelper = new DBHelper(view.getContext(),"Mileage",null,1);
 
-        // 데이터베이스의 마일리지 업데이트
+        // 현재 마일리지 표시
         sqlDB = dbHelper.getReadableDatabase();
         Cursor cursor;
         cursor = sqlDB.rawQuery("SELECT point FROM Mileage limit 1",null);
 
+        cursor.moveToFirst();
         String strPoint = cursor.getString(0);
         tvMileage.setText("내 보유 마일리지 : " + strPoint);
 
