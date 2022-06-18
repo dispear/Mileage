@@ -5,13 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.ImageButton;
 import android.widget.SearchView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -36,6 +33,7 @@ public class Comunity extends Fragment {
 
         private List<Board> boardList;
 
+        // 어뎁터 생성자
         public MainAdapter(List<Board> boardList){
             this.boardList = boardList;
         }
@@ -43,7 +41,8 @@ public class Comunity extends Fragment {
         @NonNull
         @Override
         public MainViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-            return new MainViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_main, parent, false));
+            return new MainViewHolder(LayoutInflater.from
+                    (parent.getContext()).inflate(R.layout.item_main, parent, false));
         }
 
         //position에 해당하는 데이터를 ViewHolder의 itemView에 표시
@@ -72,7 +71,7 @@ public class Comunity extends Fragment {
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent intent = new Intent(getActivity(), Checklist.class);
+                        Intent intent = new Intent(getActivity(), CheckList.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                         startActivity(intent);
                     }
@@ -135,7 +134,7 @@ public class Comunity extends Fragment {
             @Override
             public boolean onQueryTextSubmit(String s) {
                 if (s.equals("OK")) {
-                    Intent intent = new Intent(getActivity(), Checklist.class);
+                    Intent intent = new Intent(getActivity(), CheckList.class);
                     startActivity(intent);
                 }
                 return true;
@@ -151,7 +150,7 @@ public class Comunity extends Fragment {
         comunityview.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), Checklist.class);
+                Intent intent = new Intent(getActivity(), CheckList.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
             }

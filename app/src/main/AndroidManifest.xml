@@ -55,7 +55,7 @@
             android:name=".Writing"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".Checklist"
+            android:name=".CheckList"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Paper"

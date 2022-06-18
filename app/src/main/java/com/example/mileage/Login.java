@@ -43,6 +43,7 @@ public class Login extends AppCompatActivity {
         // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(this, "Mileage", null, 1);
 
+        // 액티비티를 종료하고 홈 프래그먼트로 이동
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -123,11 +124,11 @@ public class Login extends AppCompatActivity {
 
                     sqlDB = dbHelper.getWritableDatabase();
                     // 이미 데이터베이스가 있을 때 로그인 화면으로 이동하며 AVD가 튕겨 어쩔 수 없이 초기화 해줌
-                    dbHelper.onUpgrade(sqlDB,1,2);
+                    dbHelper.onUpgrade(sqlDB, 1, 2);
                     long newId = user.getId();
 
                     // 유저의 고유 카카오 아이디를 바탕으로 DB 삽입
-                    sqlDB.execSQL("INSERT INTO Mileage VALUES ("+newId+",0)");
+                    sqlDB.execSQL("INSERT INTO Mileage VALUES (" + newId + ",0)");
                     sqlDB.close();
                 } else {
                     // 로그인이 되어 있지 않다면 위와 반대로

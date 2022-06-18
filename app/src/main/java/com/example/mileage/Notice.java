@@ -19,6 +19,7 @@ public class Notice extends Activity {
         ibLink1 = (ImageButton) findViewById(R.id.ib_link1);
         ibLink2 = (ImageButton) findViewById(R.id.ib_link2);
 
+        // 액티비티를 종료하고 홈 프래그먼트로 이동
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -30,7 +31,8 @@ public class Notice extends Activity {
             @Override
             public void onClick(View view) {
                 // 외부 링크로 이동
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/seoulkfem/222756495474"));
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://blog.naver.com/seoulkfem/222756495474"));
                 startActivity(intent);
             }
         });
@@ -39,7 +41,8 @@ public class Notice extends Activity {
             @Override
             public void onClick(View view) {
                 // 외부 링크로 이동
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://blog.naver.com/seoulfamilyc/222756296821"));
+                Intent intent = new Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://blog.naver.com/seoulfamilyc/222756296821"));
                 startActivity(intent);
             }
         });

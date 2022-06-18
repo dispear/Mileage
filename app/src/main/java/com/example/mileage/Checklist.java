@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Checklist extends Activity {
+public class CheckList extends Activity {
     ImageButton btnBack;
 
     @Override

@@ -37,6 +37,7 @@ public class Challenge extends Activity {
         // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(this,"Mileage",null,1);
 
+        // 액티비티를 종료하고 홈 프래그먼트로 이동
         btnBack = (ImageButton) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override

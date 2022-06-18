@@ -30,6 +30,7 @@ public class Photo extends AppCompatActivity {
             }
         });
 
+        // 카메라로 이동
         btnRetry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,16 +52,15 @@ public class Photo extends AppCompatActivity {
 
         // 카메라 촬영을 하면 이미지뷰에 찍은 사진을 삽입
         if (requestCode == 0 && resultCode == RESULT_OK) {
-            /*
+
             // Bundle로 데이터를 입력
-            Bundle extras = data.getExtras();
+            /* Bundle extras = data.getExtras();
 
             // Bitmap으로 컨버전
             Bitmap imageBitmap = (Bitmap) extras.get("data");
 
             // 이미지뷰에 Bitmap으로 이미지를 입력
-            ivPhoto.setImageBitmap(imageBitmap);
-            */
+            ivPhoto.setImageBitmap(imageBitmap); */
         }
     }
 }

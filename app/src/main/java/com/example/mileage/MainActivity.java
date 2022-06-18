@@ -27,12 +27,13 @@ public class MainActivity extends AppCompatActivity {
         fragComunity = new Comunity();
         fragMilagemain = new MileageMain();
 
-
         // 접근 권한 여부
         ActivityCompat.requestPermissions(this, new String[]
                 {android.Manifest.permission.INTERNET, android.Manifest.permission.CAMERA,
-                        android.Manifest.permission.READ_EXTERNAL_STORAGE, android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
+                        android.Manifest.permission.READ_EXTERNAL_STORAGE,
+                        android.Manifest.permission.WRITE_EXTERNAL_STORAGE}, MODE_PRIVATE);
 
+        // container에 나타날 화면 설정
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragHome).commit();
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {

@@ -44,7 +44,7 @@ public class Paying extends AppCompatActivity {
         tvHave2 = (TextView) findViewById(R.id.tv_have2);
         tvHave3 = (TextView) findViewById(R.id.tv_have3);
         tvHave1.setText("보유 마일리지\n" + nowPoint);
-        tvHave2.setText("보유 마일리지\n" + "-" + i);
+        tvHave2.setText("결제할 마일리지\n" + "-" + i);
         tvHave3.setText("남을 마일리지 " + nextPoint);
 
         btnBack = (ImageButton) findViewById(R.id.btn_back);

@@ -27,6 +27,7 @@ public class Purchase extends AppCompatActivity {
                 finish();
             }
         });
+
         // 결제하기 화면으로 이동
         btnPurchase.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -23,7 +23,7 @@ public class Home extends Fragment {
         btnNotice = (Button) view.findViewById(R.id.btn_notice);
         btnChallenge = (Button) view.findViewById(R.id.btn_challenge);
 
-        // 로그인 버튼 화면 전환
+        // 로그인 버튼 화면으로 이동
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,7 +32,7 @@ public class Home extends Fragment {
                 startActivity(intent);
             }
         });
-        // 공지사항 화면 전환
+        // 공지사항 화면으로 이동
         btnNotice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,7 +41,7 @@ public class Home extends Fragment {
                 startActivity(intent);
             }
         });
-        // 챌린지 화면 전환
+        // 챌린지 화면으로 이동
         btnChallenge.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
