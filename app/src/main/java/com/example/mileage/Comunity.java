@@ -85,7 +85,7 @@ public class Comunity extends Fragment {
         // 프레그먼트 화면 뷰를 객체화
         view = inflater.inflate(R.layout.fragment_comunity, container, false);
 
-        Fabwrite = (FloatingActionButton) view.findViewById(R.id.Floating1);
+        Fabwrite = (FloatingActionButton) view.findViewById(R.id.F_btn);
         comunityview = (RecyclerView) view.findViewById(R.id.C_list);
         comunityview.setHasFixedSize(true);
         comunityview.setLayoutManager(new LinearLayoutManager(getActivity()));
