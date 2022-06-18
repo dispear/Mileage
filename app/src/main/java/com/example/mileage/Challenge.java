@@ -34,6 +34,7 @@ public class Challenge extends Activity {
         pb4 = (ProgressBar) findViewById(R.id.progressBar4);
         pb5 = (ProgressBar) findViewById(R.id.progressBar5);
         pb6 = (ProgressBar) findViewById(R.id.progressBar6);
+        // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(this,"Mileage",null,1);
 
         btnBack = (ImageButton) findViewById(R.id.btn_back);
@@ -54,8 +55,8 @@ public class Challenge extends Activity {
                     dlg.setMessage("챌린지 완료, 100 마일리지 획득");
                     // 데이터베이스의 마일리지 업데이트
                     sqlDB = dbHelper.getWritableDatabase();
-                    int i = 100;
-                    sqlDB.execSQL("UPDATE Mileage SET point = point+'"+i+"';");
+                    int number = 100;
+                    sqlDB.execSQL("UPDATE Mileage SET point = point+'"+number+"';");
                     sqlDB.close();
                     dlg.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                         @Override

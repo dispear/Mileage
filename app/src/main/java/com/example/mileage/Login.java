@@ -40,6 +40,7 @@ public class Login extends AppCompatActivity {
         loginButton = (View) findViewById(R.id.iv_login);
         logoutButton = (View) findViewById(R.id.btn_logout);
         btnBack = (ImageButton) findViewById(R.id.btn_back);
+        // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(this, "Mileage", null, 1);
 
         btnBack.setOnClickListener(new View.OnClickListener() {

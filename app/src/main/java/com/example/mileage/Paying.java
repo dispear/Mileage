@@ -25,6 +25,7 @@ public class Paying extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.paying);
 
+        // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(this, "Mileage", null, 1);
         // 현재 마일리지 표시
         sqlDB = dbHelper.getReadableDatabase();

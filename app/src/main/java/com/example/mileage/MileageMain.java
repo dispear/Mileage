@@ -29,6 +29,7 @@ public class MileageMain extends Fragment {
         btnBar= view.findViewById(R.id.btn_Bar);
         btnToChal=view.findViewById(R.id.btn_tochal);
         btnStore=view.findViewById(R.id.btn_store);
+        // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(view.getContext(),"Mileage",null,1);
 
         // 현재 마일리지 표시
