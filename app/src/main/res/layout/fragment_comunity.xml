@@ -4,7 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Comunity">
+    tools:context=".Comunity"
+    android:background="#ececec">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Floating1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/ic_write"
+        app:backgroundTint="@color/teal_200"/>
 
 
     <TextView
@@ -34,136 +43,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="30dp"
-                android:background="#E8E7E7" />
+                android:background="#FFFFFF" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/C_list"
                 android:layout_height="match_parent"
-                android:background="@drawable/topline"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/tv_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="게시글"
-                    android:textAlignment="center"
-                    android:textSize="30dp" />
-
-                <ImageButton
-                    android:id="@+id/ib_write"
-                    android:layout_width="200dp"
-                    android:layout_height="80dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/writeicon" />
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                />
 
-                <TextView
-                    android:id="@+id/tv_post1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="질문"
-                    android:textSize="30dp" />
 
-                <TextView
-                    android:id="@+id/tv_post2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="종이 배출에 대해서 질문 있습니다."
-                    android:textSize="30dp" />
 
-                <TextView
-                    android:id="@+id/tv_post3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="이거 아시는 분 계신가요?"
-                    android:textSize="30dp" />
 
-                <TextView
-                    android:id="@+id/tv_post4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="컴퓨터 부품은 따로 처리해야하나요"
-                    android:textSize="30dp" />
-
-                <TextView
-                    android:id="@+id/tv_post5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="형광등 같은 전등류는 어디에 버리나요?"
-                    android:textSize="30dp" />
-
-                <TextView
-                    android:id="@+id/tv_post6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="게시글 작성 시 규칙이 있나요?"
-                    android:textSize="30dp" />
-
-                <TextView
-                    android:id="@+id/tv_post7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="앱 사용에 대한 질문입니다"
-                    android:textSize="30dp" />
-
-                <TextView
-                    android:id="@+id/tv_post8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="이벤트에 관해 궁금한 부분입니다."
-                    android:textSize="30dp" />
-
-                <TextView
-                    android:id="@+id/tv_post9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="이벤트 참여 어떻게 하나요?"
-                    android:textSize="30dp" />
-
-                <TextView
-                    android:id="@+id/tv_post10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/topline"
-                    android:text="결제 문의입니다."
-                    android:textSize="30dp" />
-
-                <Button
-                    android:id="@+id/btn_add"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/button_shape"
-                    android:text="더보기" />
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
