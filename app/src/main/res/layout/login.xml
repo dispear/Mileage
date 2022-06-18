@@ -72,9 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="100dp"
-            android:src="@drawable/kakao_login_large_wide"
-            android:visibility="gone" />
-        // 로그인 시 보이기 위하여 gone로 설정해줍니다.
+            android:src="@drawable/kakao_login_large_wide" />
 
         <Button
             android:id="@+id/btn_logout"
@@ -82,9 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@drawable/button_shape"
-            android:text="로그아웃"
-            android:visibility="gone" />
-        // 로그인 시 보이기 위하여 gone로 설정해줍니다.
+            android:text="로그아웃" />.
 
     </LinearLayout>
 </FrameLayout>

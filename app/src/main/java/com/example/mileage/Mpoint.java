@@ -21,14 +21,14 @@ public class Mpoint extends AppCompatActivity {
         Intent i = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(i, 0);
 
-        btnBack = (Button) findViewById(R.id.btn_purchase);
+        btnBack = (Button) findViewById(R.id.btn_back);
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 finish();
             }
         });
-        btnRecycle = (Button) findViewById(R.id.btn_purchase);
+        btnRecycle = (Button) findViewById(R.id.btn_recycle);
         btnRecycle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
