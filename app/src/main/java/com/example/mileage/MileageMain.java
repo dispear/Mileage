@@ -16,7 +16,7 @@ import androidx.fragment.app.Fragment;
 public class MileageMain extends Fragment {
     View view;
     TextView tvMileage;
-    Button btnBar, btnToChal, btnStore;
+    Button btnBar, btnToChal, btnStore, btnRefresh;
     DBHelper dbHelper;
     SQLiteDatabase sqlDB;
 
@@ -29,6 +29,7 @@ public class MileageMain extends Fragment {
         btnBar = view.findViewById(R.id.btn_Bar);
         btnToChal = view.findViewById(R.id.btn_tochal);
         btnStore = view.findViewById(R.id.btn_store);
+
         // 데이터베이스 관리 클래스
         dbHelper = new DBHelper(view.getContext(), "Mileage", null, 1);
 

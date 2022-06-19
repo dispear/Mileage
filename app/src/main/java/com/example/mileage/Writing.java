@@ -7,14 +7,9 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -49,7 +44,7 @@ public class Writing extends Activity implements View.OnClickListener {
             }
         });
 
-        // 사진 첨부 눌렀을 때 갤러리 연결
+        // 사진 첨부 클릭 했을 시 갤러리 연결
         ivPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,27 +56,28 @@ public class Writing extends Activity implements View.OnClickListener {
         });
     }
 
-    //등록 버튼 클릭 OnClick 함수
+    // 등록 버튼 클릭 함수
     @Override
     public void onClick(View v) {
         Map<String, Object> post = new HashMap<>();
-        post.put("id",id);
-        post.put("title",writeTitle.getText().toString());
-        post.put("content",writeContent.getText().toString());
+        post.put("id", id);
+        post.put("title", writeTitle.getText().toString());
+        post.put("content", writeContent.getText().toString());
 
+        /* 데이터베이스 생성이 되지않아 등록 에러 발생
         //board라는 컬렉션안의 post라는 문서를 추가하고 게시글 작성화면에서 입력한 title, content를 firebase에 저장
         //성공하면 "업로드 성공", 실패하면 "업로드 실패" Toast 띄움
         Dbase.collection("board").document(id).set(post)
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(Writing.this,"업로드 성공",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Writing.this, "업로드 성공", Toast.LENGTH_SHORT).show();
                     }
-            }).addOnFailureListener(new OnFailureListener() {
+                }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(Writing.this,"업로드 실패",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Writing.this, "업로드 실패", Toast.LENGTH_SHORT).show();
                     }
-                });
+                }); */
     }
 }
